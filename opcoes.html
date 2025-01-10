@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+  <link rel="stylesheet" type="text/css" href="css/style.css" />
+  <title>Opções</title>
+  <meta charset="utf-8">
+</head>
+<body>
+   
+    <br>
+    <div class="Níveis">
+
+   <h1> <button onclick="window.location.href='jogo1.html'" class="botao">Fácil </button></h1>
+    <h1><buton onclick="window.location.href='jogo2.html'" class="botao">Médio </button><br></h1>
+    <buton onclick="window.location.href='jogo3.html'" class="botao">Difícil </button><br>
+
+    </div>
+
+
+    <div class="volume-container">
+        <label for="volume">Volume:</label>
+        <input type="range" id="volume" name="volume" min="0" max="100" value="50">
+        <span id="volume-value">50</span>
+    </div>
+
+    <script>
+        // Atualiza o valor do volume conforme o controle é movido
+        const volumeSlider = document.getElementById('volume');
+        const volumeValue = document.getElementById('volume-value');
+        
+        volumeSlider.addEventListener('input', function() {
+            volumeValue.textContent = volumeSlider.value;
+        });
+    </script>
+
+    <br>
+    <a href="index.html" class="botao">VOLTAR</a>
+
+</body>
+</html>
